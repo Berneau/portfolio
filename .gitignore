@@ -3,3 +3,6 @@ _site/
 
 # Sass cache
 *.scssc
+
+#npm
+node_modules/

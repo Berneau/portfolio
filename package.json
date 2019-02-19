@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Jekyll Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Berneau/portfolio.git"
+  },
+  "keywords": [
+    "jekyll"
+  ],
+  "author": "bernhard.steger@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Berneau/portfolio/issues"
+  },
+  "homepage": "https://github.com/Berneau/portfolio#readme",
+  "devDependencies": {
+    "eslint": "^5.14.1"
+  }
+}
