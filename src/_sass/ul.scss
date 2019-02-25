@@ -1,0 +1,55 @@
+@import 'variables';
+
+ul {
+  list-style: none;
+  
+  &.list-with-icon {
+    
+    li {
+      align-items: center;
+      padding: 5px 0;
+      display: flex;
+      
+      svg {
+        margin-right: 10px;
+        fill: $light-grey;
+        height: 32px;
+        width: 32px;
+        
+        path {
+          transition: fill .3s;
+        }
+      }
+      
+      span {
+        transition: color .3s;
+        color: $light-grey;
+        font-size: 18px;
+      }
+      
+      &:hover {
+        
+        svg {
+          .javascript { fill: $javascript; }
+          .angular { fill: $angular; }
+          .jekyll { fill: $jekyll; }
+          .sass { fill: $sass; }
+          .d3js1 { fill: $d3js1; }
+          .d3js2 { fill: $d3js2; }
+          .vuejs1 { fill: $vuejs1; }
+          .vuejs2 { fill: $vuejs2; }
+          .nodejs { fill: $nodejs; }
+          .express { fill: $express; }
+          .mongodb { fill: $mongodb; }
+          .mysql { fill: $mysql; }
+          .php { fill: $php; }
+          .wordpress { fill: $wordpress; }
+        }
+        
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+}

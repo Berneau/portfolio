@@ -1,0 +1,9 @@
+.col {
+  display: flex;
+  width: 50%;
+  
+  &.centered {
+    flex-direction: column;
+    align-items: center;
+  }
+}
