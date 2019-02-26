@@ -1,6 +1,10 @@
 @import 'variables';
 
 h1 {
+  
+}
+
+h2 {
   margin-bottom: 15px;
   position: relative;
   text-align: center;
@@ -19,24 +23,21 @@ h1 {
   }
 }
 
-h2 {
+h3 {
   margin: 0 0 25px 0;
   font-weight: 400;
   font-size: 32px;
 }
 
-h3 {
-  font-weight: 400;
-}
 
 section.light {
-  h1, h2, h3 {
+  h2, h3 {
     color: $dark-grey;
   }
 }
 
 section.dark {
-  h1, h2, h3 {
+  h2, h3 {
     color: $white;
   }
 }
