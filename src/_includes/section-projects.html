@@ -2,4 +2,15 @@
   <div class="row">
     <h2>Projects</h2>
   </div>
+  
+  <div class="row">
+    {% for project in site.projects %}
+      {{ project.name }}
+      <ul>
+        {% for task in project.tasks %}
+          <li>{{ task }}</li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
 </section>
