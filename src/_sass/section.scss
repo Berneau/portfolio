@@ -11,6 +11,52 @@ section {
   }
   
   &.light {
-    background-image: $white;
+    background-color: $white;
   }
+  
+  &.landing {
+    position: relative;
+    height: 100vh;
+    padding: 0;
+    
+    svg {
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      top: 0;
+      
+      .active.grey-0 { animation: highlight-0 3s linear; }
+      .active.grey-1 { animation: highlight-1 3s linear; }
+      .active.grey-2 { animation: highlight-2 3s linear; }
+      .active.grey-3 { animation: highlight-3 3s linear; }
+    }
+  }
+  
+  &.vertical-center {
+    justify-content: center;
+  }
+}
+
+@keyframes highlight-0 {
+  0%   { fill: $grey-0; }
+  50%  { fill: $gradient-orange; }
+  100% { fill: $grey-0; }
+}
+
+@keyframes highlight-1 {
+  0%   { fill: $grey-1; }
+  50%  { fill: $gradient-orange; }
+  100% { fill: $grey-1; }
+}
+
+@keyframes highlight-2 {
+  0%   { fill: $grey-2; }
+  50%  { fill: $gradient-orange; }
+  100% { fill: $grey-2; }
+}
+
+@keyframes highlight-3 {
+  0%   { fill: $grey-3; }
+  50%  { fill: $gradient-orange; }
+  100% { fill: $grey-3; }
 }

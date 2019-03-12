@@ -23,5 +23,6 @@
   "homepage": "https://github.com/Berneau/portfolio#readme",
   "devDependencies": {
     "eslint": "^5.14.1"
-  }
+  },
+  "dependencies": {}
 }

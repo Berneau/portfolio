@@ -1,26 +1,26 @@
 @import 'variables';
 
 h1 {
+  pointer-events: none;
+  font-size: 62px;
+  color: $white;
+  z-index: 1;
   
+  .gradient {
+    @include background-gradient;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    background-clip: text;
+  }
 }
 
 h2 {
-  margin-bottom: 15px;
+  padding-bottom: 15px;
   position: relative;
   text-align: center;
   font-weight: 700;
   font-size: 52px;
-  
-  &:after {
-    background-image: linear-gradient(to right, $gradient-orange, $gradient-red, $gradient-pink);
-    left: calc(50% - 25px);
-    border-radius: 4px;
-    position: absolute;
-    bottom: -12px;
-    content: '';
-    height: 7px;
-    width: 50px;
-  }
 }
 
 h3 {
@@ -39,5 +39,22 @@ section.light {
 section.dark {
   h2, h3 {
     color: $white;
+  }
+}
+
+.chip {
+  
+  &:after {
+    @include background-gradient;
+    left: calc(50% - 25px);
+    border-radius: 4px;
+    position: absolute;
+    content: '';
+    height: 7px;
+    width: 50px;
+    bottom: 3px;
+  }
+  
+  &:hover:after {
   }
 }

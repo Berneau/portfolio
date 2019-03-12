@@ -1,14 +1,19 @@
 $white: #fff;
-
 $light-grey: #bdbdbd;
 $dark-grey: #272a32;
 
-// for gradient
+// gradient
 $gradient-orange: #ff6d00;
 $gradient-red: #ff1744;
 $gradient-pink: #c51162;
 
-// for dev icons
+// triangles 
+$grey-0: #272a32;
+$grey-1: #292c34;
+$grey-2: #2b2e36;
+$grey-3: #2d3038;
+
+// dev icons
 $javascript: #F0DB4F;
 $angular: #C4473A;
 $jekyll: #b22418;
@@ -23,3 +28,7 @@ $mongodb: #4FAA41;
 $mysql: #00618A;
 $php: #6181B6;
 $wordpress: #494949;
+
+@mixin background-gradient {
+  background: linear-gradient(to right, $gradient-orange, $gradient-red, $gradient-pink);
+}
