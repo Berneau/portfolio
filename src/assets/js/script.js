@@ -17,6 +17,14 @@ function setNextWord() {
     love: 'enhance',
     enhance: 'develop'
   }
+  
   var elem = document.getElementById('text-cycle');
-  elem.innerHTML = WORDS[elem.innerHTML]
+  elem.classList.remove('fadein');
+  elem.classList.add('fadeout');
+  
+  setTimeout(function() {
+    elem.classList.remove('fadeout');
+    elem.innerHTML = WORDS[elem.innerHTML]
+    elem.classList.add('fadein');
+  }, 450);
 }

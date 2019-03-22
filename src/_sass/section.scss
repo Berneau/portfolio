@@ -21,6 +21,16 @@ section {
     position: relative;
     height: 100vh;
     padding: 0;
+      
+    .fadein {
+      animation-duration: .5s;
+      animation-name: animate-fadein;
+    }
+    
+    .fadeout {
+      animation-duration: .5s;
+      animation-name: animate-fadeout;
+    }
   }
   
   &.vertical-center {
@@ -28,26 +38,12 @@ section {
   }
 }
 
-@keyframes highlight-0 {
-  0%   { fill: $grey-0; }
-  50%  { fill: $gradient-orange; }
-  100% { fill: $grey-0; }
+@keyframes animate-fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-@keyframes highlight-1 {
-  0%   { fill: $grey-1; }
-  50%  { fill: $gradient-orange; }
-  100% { fill: $grey-1; }
-}
-
-@keyframes highlight-2 {
-  0%   { fill: $grey-2; }
-  50%  { fill: $gradient-orange; }
-  100% { fill: $grey-2; }
-}
-
-@keyframes highlight-3 {
-  0%   { fill: $grey-3; }
-  50%  { fill: $gradient-orange; }
-  100% { fill: $grey-3; }
+@keyframes animate-fadeout {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
 }
