@@ -4,4 +4,42 @@ footer {
   background-color: $white;
   min-height: 128px;
   width: 100%;
+  
+  .image {
+    background-image: url('/assets/images/profile.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .contact-information {
+    flex-direction: column;
+    display: flex;
+    
+    .name {
+      text-transform: uppercase;
+    }
+    
+    .links {
+      svg {
+        margin-right: 3px;
+        cursor: pointer;
+        height: 26px;
+        width: 26px;
+      }
+    }
+  }
+  
+  .imprint-wrapper {
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    display: flex;
+    height: 48px;
+    width: 100%;
+  }
 }

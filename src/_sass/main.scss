@@ -13,4 +13,11 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: $dark-grey;
   font-weight: 300;
+  
+  a:active,
+  a:visited,
+  a {
+    text-decoration: none;
+    color: $dark-grey;
+  }
 }
