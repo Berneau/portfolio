@@ -19,6 +19,7 @@ function setNextWord() {
   }
   
   var elem = document.getElementById('text-cycle');
+  if (!elem) return;
   elem.classList.remove('fadein');
   elem.classList.add('fadeout');
   
