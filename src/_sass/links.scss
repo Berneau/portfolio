@@ -1,0 +1,16 @@
+@import 'variables';
+
+a:active,
+a:visited,
+a {
+  text-decoration: none;
+  color: $dark-grey;
+  
+  &:hover {
+    @include background-gradient;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    background-clip: text;
+  }
+}

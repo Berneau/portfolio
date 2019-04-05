@@ -33,7 +33,7 @@ footer {
     }
   }
   
-  .imprint-wrapper {
+  .nav-wrapper {
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
@@ -41,5 +41,9 @@ footer {
     display: flex;
     height: 48px;
     width: 100%;
+    
+    .seperator {
+      margin: 0 10px 1px 10px;
+    }
   }
 }

@@ -4,13 +4,13 @@
   </div>
   
   <div class="row">
-    {% for project in site.projects %}
-      {{ project.name }}
-      <ul>
-        {% for task in project.tasks %}
-          <li>{{ task }}</li>
-        {% endfor %}
-      </ul>
-    {% endfor %}
+    <ul class="project-list">
+      {% for project in site.projects %}
+        {% if project.active == true %}
+          {% include project.html project=project %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+
   </div>
 </section>

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", onDomLoad);
 
 function onDomLoad() {
-  setTimeout(cycleWords, 1000)
+  setTimeout(cycleWords, 1000);
 }
 
 function cycleWords() {

@@ -1,0 +1,25 @@
+<li class="project">
+  
+  <div class="project-image" style="background-image: url('/assets/images/projects/{{ project.image }}')"></div>
+  
+  <div class="project-body">
+    <h4 class="project-title">{{ project.name }}</h4>
+    
+    <div class="project-tag-list">
+      {% for task in project.tasks %}
+      <span class="project-tag">{{ task }}</span>
+      {% endfor %}
+    </div>
+    
+    <div class="project-text">{{ project.content }}</div>
+    
+    <div class="spacer"></div>
+    
+    <div class="project-link-list">
+      {% for link in project.links %}
+      <a href="{{ link.url }}" target="_blank" class="project-link">{{ link.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  
+</li>

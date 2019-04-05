@@ -2,10 +2,12 @@
 @import 'variables';
 @import 'headers';
 @import 'section';
+@import 'project';
 @import 'footer';
 @import 'row';
 @import 'col';
 @import 'ul';
+@import 'links';
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400');
 
@@ -13,11 +15,8 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: $dark-grey;
   font-weight: 300;
-  
-  a:active,
-  a:visited,
-  a {
-    text-decoration: none;
-    color: $dark-grey;
+
+  li {
+    list-style: none;
   }
 }

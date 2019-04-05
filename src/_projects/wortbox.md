@@ -1,5 +1,7 @@
 ---
 name: Wortbox (WIP)
+image:
+active: false
 tasks:
   - Jekyll
   - Sass

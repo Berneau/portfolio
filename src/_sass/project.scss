@@ -1,0 +1,79 @@
+@import 'variables';
+
+.project {
+  flex-direction: row;
+  margin: 35px 0;
+  display: flex;
+  width: 100%;
+  
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  
+  .project-image {
+    background-position: center center;
+    border: 1px solid $light-grey;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 15px;
+    height: 148px;
+    width: 148px;
+    
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  }
+  
+  .project-body {
+    flex-direction: column;
+    max-width: 600px;
+    display: flex;
+    
+    @media only screen and (max-width: 768px) {
+      align-items: center;
+    }
+    
+    .project-tag-list {
+      margin-bottom: 10px;
+      display: flex;
+      
+      .project-tag {
+        border: 1px solid $light-grey;
+        border-radius: 25px;
+        color: $light-grey;
+        margin-right: 5px;
+        padding: 1px 8px;
+        font-size: 12px;
+        display: block;
+        
+        &:hover {
+          @include background-gradient;
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          text-fill-color: transparent;
+          border-color: $dark-grey;
+          background-clip: text;
+          cursor: default;
+        }
+      }
+    }
+    
+    .project-text {
+      margin-bottom: 10px;
+      
+      @media only screen and (max-width: 768px) {
+        text-align: center; 
+      }
+      
+      a {
+        text-decoration: underline;
+      }
+    }
+    
+    .spacer {
+      flex-grow: 1;
+    }
+  }
+}
