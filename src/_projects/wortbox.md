@@ -1,7 +1,9 @@
 ---
 name: Wortbox (WIP)
+slug: wortbox
 image:
 active: false
+featured: false
 tasks:
   - Jekyll
   - Sass

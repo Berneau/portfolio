@@ -35,6 +35,30 @@ section {
     }
   }
   
+  &.projects {
+    
+    .button {
+      border: 1px solid $dark-grey;
+      border-radius: 20px;
+      padding: 10px 15px;
+    }
+  }
+  
+  &.project-full .project {
+    
+    .project-title {
+      color: $white;
+    }
+    
+    .project-tag:hover {
+      border: 1px solid $white!important;
+    }
+    
+    a {
+      color: $white;
+    }
+  }
+  
   &.imprint {
     min-height: calc(100vh - 348px);
     justify-content: center;

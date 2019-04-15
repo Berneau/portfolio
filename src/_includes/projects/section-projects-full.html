@@ -1,0 +1,13 @@
+<section class="project-full dark" id="{{ project.slug }}">
+  
+  <div class="row">
+    <ul class="project-list">
+      {% for project in site.projects %}
+        {% if project.active == true %}
+          {% include project.html project=project %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+</section>

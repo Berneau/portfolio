@@ -1,4 +1,4 @@
-<section id="anchor-projects" class="light">
+<section id="anchor-projects" class="light projects">
   <div class="row">
     <h2 class="chip">Projects</h2>
   </div>
@@ -6,11 +6,16 @@
   <div class="row">
     <ul class="project-list">
       {% for project in site.projects %}
-        {% if project.active == true %}
-          {% include project.html project=project %}
+        {% if project.featured == true %}
+          {% if project.active == true %}
+            {% include project.html project=project %}
+          {% endif %}
         {% endif %}
       {% endfor %}
     </ul>
-
+  </div>
+  
+  <div class="row">
+    <a href="/projects" class="button">More Projects</a>
   </div>
 </section>

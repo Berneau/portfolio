@@ -1,7 +1,9 @@
 ---
 name: Loxhome Calculator (WIP)
+slug: loxhome-calculator
 image: loxhome.png
 active: true
+featured: true
 tasks:
   - php
   - Wordpress

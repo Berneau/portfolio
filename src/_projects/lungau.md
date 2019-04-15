@@ -1,7 +1,9 @@
 ---
 name: Lungauer Speis
+slug: lungauer_speis
 image: lungau.png
 active: true
+featured: true
 tasks:
   - Node.js
   - Express

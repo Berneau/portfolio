@@ -1,7 +1,9 @@
 ---
 name: Q-Tax
+slug: q-tax
 image: q-tax.png
 active: true
+featured: true
 tasks:
   - Angular
   - Sass
