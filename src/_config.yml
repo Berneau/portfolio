@@ -2,4 +2,3 @@ sass:
     style: compressed
 collections:
   - projects
-  - navigation
